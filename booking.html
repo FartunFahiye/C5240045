@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Guest Booking Form</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form class="booking-form" action="#" method="post">
+      <fieldset>
+        <legend>Guest Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        <label for="major">Major:</label>
+        <select id="major" name="major" required>
+          <option value="">Select Major</option>
+          <option value="cs">Computer Science</option>
+          <option value="se">Software Engineering</option>
+          <option value="it">Information Technology</option>
+        </select>
+
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male" required /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+
+        <p>Hobbies:</p>
+        <label><input type="checkbox" name="hobbies" value="reading" /> Reading</label>
+        <label><input type="checkbox" name="hobbies" value="coding" /> Coding</label>
+        <label><input type="checkbox" name="hobbies" value="traveling" /> Traveling</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write something..."></textarea>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fartun Fahiye – ID: C5240045</p>
+  </footer>
+
+</body>
+</html>
